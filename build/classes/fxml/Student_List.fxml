@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="810.0" styleClass="mainFxmlClass" stylesheets="@../css/student_list.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student_ListController">
+   <children>
+      <TableView fx:id="Table" layoutY="38.0" prefHeight="460.0" prefWidth="1000.0" styleClass="table-v" stylesheets="@../css/student_list.css">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="34.0" styleClass="table-c" text="S.No" />
+          <TableColumn fx:id="col_name" prefWidth="127.0" styleClass="table-c" text="Name" />
+            <TableColumn fx:id="col_fname" prefWidth="110.0" styleClass="table-c" text="Father Name" />
+            <TableColumn fx:id="col_cast" prefWidth="66.0" styleClass="table-c" text="Cast" />
+            <TableColumn fx:id="col_age" prefWidth="51.0" styleClass="table-c" text="Age" />
+            <TableColumn fx:id="col_gender" prefWidth="67.0" styleClass="table-c" text="Gender" />
+            <TableColumn fx:id="col_dob" prefWidth="84.0" styleClass="table-c" text="Dob" />
+            <TableColumn fx:id="col_Sclass" prefWidth="72.0" styleClass="table-c" text="Class" />
+            <TableColumn fx:id="col_rollno" prefWidth="69.0" styleClass="table-c" text="Roll No" />
+            <TableColumn fx:id="col_add" prefWidth="159.0" styleClass="table-c" text="Address" />
+            <TableColumn fx:id="col_cont" minWidth="5.0" prefWidth="182.0" styleClass="table-c" text="Contact" />
+        </columns>
+      </TableView>
+      <Pane layoutX="1.0" layoutY="-3.0" prefHeight="41.0" prefWidth="998.0" style="-fx-background-color: #ABEBC6;">
+         <children>
+            <Label layoutX="37.0" layoutY="12.0" text="STUDENT LIST" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="767.0" layoutY="8.0" prefHeight="25.0" prefWidth="126.0" promptText="Chose Class" unFocusColor="BLACK" />
+         </children>
+      </Pane>
+      <JFXButton layoutX="34.0" layoutY="498.0" onAction="#UpdateStudent" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #2ECC71;" styleClass="update-btn" stylesheets="@../css/student_list.css" text="UPDATE" />
+      <JFXButton layoutX="165.0" layoutY="498.0" onAction="#DeleteStudent" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #EC7063;" styleClass="delete-btn" stylesheets="@../css/student_list.css" text="DELETE" />
+      <JFXButton layoutX="283.0" layoutY="498.0" onAction="#RefreshList" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #5DADE2;" styleClass="refresh-btn" stylesheets="@../css/student_list.css" text="REFRESH" />
+      <JFXButton layoutX="406.0" layoutY="498.0" onAction="#PrintData" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #E59866;" styleClass="print-btn" stylesheets="@../css/student_list.css" text="PRINT" />
+      <ImageView layoutX="366.0" layoutY="499.0">
+         <image>
+            <Image url="@../Images/icons8_update_left_rotation_24px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="243.0" layoutY="498.0">
+         <image>
+            <Image url="@../Images/icons8_delete_24px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="117.0" layoutY="499.0">
+         <image>
+            <Image url="@../Images/icons8_renew_24px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="488.0" layoutY="498.0">
+         <image>
+            <Image url="@../Images/icons8_print_24px_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

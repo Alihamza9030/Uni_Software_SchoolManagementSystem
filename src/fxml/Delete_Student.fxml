@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="443.0" styleClass="mainFxmlClass" stylesheets="@../css/delete_student.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Delete_StudentController">
+   <children>
+      <Pane prefHeight="45.0" prefWidth="443.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="30.0" layoutY="14.0" text="DELETE STUDENT" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="74.0" layoutY="74.0" text="ID :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="108.0" layoutY="111.0" onAction="#DeleteData" prefHeight="25.0" prefWidth="246.0" styleClass="delete-btn" text="DELETE">
+         <stylesheets>
+            <URL value="@../css/delete_student.css" />
+            <URL value="@../css/delete_student.css" />
+         </stylesheets>
+      </JFXButton>
+      <TextField fx:id="ID" layoutX="108.0" layoutY="74.0" prefHeight="25.0" prefWidth="246.0" promptText="Enter Id" />
+   </children>
+</AnchorPane>

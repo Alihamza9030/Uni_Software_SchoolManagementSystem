@@ -1,0 +1,30 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+     
+     -fx-background-color: #FFF ;
+}
+.submit-btn{
+    -fx-background-color: #3498DB;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 13px;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-cursor: hand;
+}
+.submit-btn:hover{
+    -fx-opacity: 0.5;
+}
+.reset-btn{
+    -fx-background-color: red;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 13px;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-cursor: hand;
+}
+.reset-btn:hover{
+    -fx-opacity: 0.5;
+}

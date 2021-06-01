@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="937.0" style="-fx-background-color: #FFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AttendanceController">
+    <stylesheets>
+        <URL value="@/css/attendance.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="58.0" prefWidth="937.0" style="-fx-background-color: tomato;">
+         <children>
+            <Label layoutX="56.0" layoutY="21.0" text="ATTENDANCE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView layoutY="261.0" prefHeight="279.0" prefWidth="937.0" styleClass="table-v" stylesheets="@../css/attendance.css">
+        <columns>
+          <TableColumn prefWidth="75.0" styleClass="table-c" text="Roll No" />
+          <TableColumn prefWidth="118.0" styleClass="table-c" text="Name" />
+            <TableColumn prefWidth="138.0" styleClass="table-c" text="F.Name" />
+            <TableColumn minWidth="0.0" prefWidth="78.0" styleClass="table-c" text="Class" />
+            <TableColumn prefWidth="127.0" styleClass="table-c" text="Time In" />
+            <TableColumn prefWidth="127.0" styleClass="table-c" text="Date" />
+            <TableColumn prefWidth="127.0" styleClass="table-c" text="Day" />
+            <TableColumn prefWidth="150.0" styleClass="table-c" text="Status" />
+        </columns>
+      </TableView>
+      <TextField layoutX="40.0" layoutY="116.0" prefWidth="168.0" promptText="Enter Roll No" styleClass="rn-field" stylesheets="@../css/attendance.css" />
+      <JFXComboBox focusColor="#e44a41" layoutX="40.0" layoutY="158.0" prefHeight="25.0" prefWidth="168.0" promptText="Chose Class" />
+      <Label layoutX="40.0" layoutY="99.0" text="Roll Number " />
+   </children>
+</AnchorPane>

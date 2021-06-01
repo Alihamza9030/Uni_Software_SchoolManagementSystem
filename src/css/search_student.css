@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+   -fx-background-color: #F9EBEA ;
+}
+.right-pane{
+    -fx-background-color: #FFF;
+}
+.search-btn{
+    -fx-background-color: #EC7063;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #FFF;
+}
+.search-btn:hover{
+    -fx-opacity: 0.5;
+}
+.Rollno{
+    -fx-background-color: transparent;
+    
+}

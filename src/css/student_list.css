@@ -1,0 +1,48 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+  -fx-background-color: #FFF;
+}
+.table-v{
+    -fx-background-color: transparent;
+   
+}
+.table-v .table-c{
+
+    -fx-background-color: #FFF;
+    
+}
+.table-v .column-header {
+    -fx-background-color: #28B463;
+    
+}
+.table-v .column-border *{
+    -fx-border-color: black;
+}
+.table-v .table-c .label{
+    -fx-text-fill: White;
+}
+.table-v .scroll-bar {
+    -fx-background-color: white;
+}
+.table-v .scroll-bar .thumb {
+    -fx-background-color: transparent;
+}
+
+.update-btn .delete-btn .refresh-btn .print-btn{
+    -fx-cursor: hand;
+}
+.update-btn:hover{
+    -fx-opacity: 0.5;
+}
+.delete-btn:hover{
+    -fx-opacity: 0.5;
+}
+.refresh-btn:hover{
+    -fx-opacity: 0.5;
+}
+.print-btn:hover{
+    -fx-opacity: 0.5;
+}

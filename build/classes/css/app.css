@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 18, 2021, 12:45:43 PM
+    Author     : Syed Areeb
+*/
+.dashboard{
+  -fx-background-color: #F0F3F4 ;
+  
+}
+.VBox{
+    -fx-background-color: #FFF;
+     
+}    
+
+.card-1{
+   -fx-background-size: 1200 900;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-color: linear-gradient(to right, #333333, #dd1818);
+}
+.card-2{
+   -fx-background-size: 1200 900;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-color: linear-gradient(to right, #c31432,#240b36);
+    
+}
+.card-3{
+   -fx-background-size: 1200 900;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-color: linear-gradient(to right, #fc4a1a, #f7b733);
+    
+}
+.text-1{
+    -fx-text-fill: #FFF;
+    -fx-font: 16px cursive;
+        
+}
+.count{
+    -fx-text-fill: #FFF;
+    -fx-font: bold 35px cursive ;
+    
+    
+}
+.card-1:hover{
+    -fx-translate-y: 10;
+    
+}
+.card-2:hover{
+    -fx-translate-y: 10;
+    
+}
+.card-3:hover{
+    -fx-translate-y: 10;
+    
+}
+.back-pane{
+    -fx-background-color: #fff;
+    -fx-background-radius: 0 0 12 12;
+    -fx-border-radius: 0 0 12 12;
+}
+.side-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.side-btn:hover{
+   -fx-background-color: linear-gradient(to right, #333333, #dd1818);
+}
+.bottom-left-pane{
+    -fx-background-color: #fff;
+     -fx-background-radius: 12 12 12 0;
+    -fx-border-radius: 12 12 12 0;
+}
+.bottom-right-pane{
+    -fx-background-color: #fff;
+     -fx-background-radius: 12 12 0 12;
+    -fx-border-radius: 12 12 0 12;
+}
+.pane{
+    -fx-background-color: #fff;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 10,0,0,1 );
+}
+.status-Box{
+    -fx-background-color: #FCF3CF;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    
+}
+.status-Box2{
+    -fx-background-color: transparent ,#D7BDE2 ;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius: 12 12 12 12;
+    
+}
+.round-box{
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 5px;
+    -fx-border-color: #EBF5FB ;
+}

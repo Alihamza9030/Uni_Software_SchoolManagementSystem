@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="677.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+    <stylesheets>
+        <URL value="@/css/login.css" />
+    </stylesheets>
+   <children>
+      <JFXButton fx:id="LBtn" layoutX="414.0" layoutY="196.0" onAction="#Login" prefHeight="27.0" prefWidth="173.0" styleClass="login-btn" stylesheets="@../css/login.css" text="Login" />
+      <JFXTextField fx:id="User" focusColor="#e7671e" layoutX="413.0" layoutY="87.0" prefHeight="25.0" prefWidth="173.0" promptText="Username" />
+      <JFXPasswordField fx:id="Pass" focusColor="#e7671e" layoutX="413.0" layoutY="141.0" prefHeight="25.0" prefWidth="173.0" promptText="Password" />
+      <Label layoutX="450.0" layoutY="14.0" prefHeight="45.0" prefWidth="88.0" style="-fx-font-family: &quot;Amenda&quot;; -fx-padding: 5px;" styleClass="label1" stylesheets="@../css/login.css" text="Login">
+         <font>
+            <Font name="Arial Narrow" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="421.0" layoutY="243.0" prefHeight="3.0" prefWidth="67.0" />
+      <Label layoutX="494.0" layoutY="234.0" text="OR" textFill="#aea7a7" />
+      <Separator layoutX="516.0" layoutY="242.0" prefHeight="3.0" prefWidth="67.0" />
+      <Label layoutX="413.0" layoutY="169.0" text="Forget Passwod?" textFill="#9e9393">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="80.0" layoutY="29.0">
+         <image>
+            <Image url="@../Images/icons8_management_200px_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="194.0" prefHeight="49.0" prefWidth="200.0" text="WELCOME" textAlignment="CENTER">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="414.0" layoutY="262.0" prefHeight="25.0" prefWidth="173.0" styleClass="signup-btn" stylesheets="@../css/login.css" text="Sign Up" />
+   </children>
+</AnchorPane>

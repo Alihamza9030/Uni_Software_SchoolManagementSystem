@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+  -fx-background-color: #FFF;
+}     
+.submit-btn{
+    -fx-background-color:#3498DB;
+    -fx-text-fill:#FFF;
+}
+.reset-btn{
+    -fx-background-color:#ff0000;
+    -fx-text-fill:#FFF;
+}
+.submit-btn:hover{
+    -fx-opacity:0.5;
+    
+}
+.reset-btn:hover{
+   -fx-opacity:0.5;
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="937.0" style="-fx-background-color: #FFF;" styleClass="root" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StaffController">
+    <stylesheets>
+        <URL value="@/css/staff.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="79.0" layoutY="60.0" prefHeight="100.0" prefWidth="788.0" spacing="20.0" styleClass="HBox" stylesheets="@../css/student.css">
+         <children>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-1" stylesheets="@../css/student.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Label layoutX="88.0" layoutY="67.0" text="ADD STAFF" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="99.0" layoutY="21.0">
+                     <image>
+                        <Image url="@../Images/icons8_add_user_male_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-2" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="67.0" text="SEARCH STAFF" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="99.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/icons8_search_client_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-3" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="78.0" layoutY="67.0" prefHeight="19.0" prefWidth="91.0" text="STAFF WORK" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="103.0" layoutY="25.0">
+                     <image>
+                        <Image url="@../Images/icons8_work_40px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="81.0" layoutY="187.0" prefHeight="100.0" prefWidth="788.0" spacing="20.0" styleClass="HBox" stylesheets="@../css/student.css">
+         <children>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-4" stylesheets="@../css/student.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Label layoutX="62.0" layoutY="67.0" text="STAFF PAYMENT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="90.0" layoutY="21.0">
+                     <image>
+                        <Image url="@../Images/icons8_money_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-5" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="83.0" layoutY="67.0" text="Update Delete " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="99.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/icons8_update_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-6" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="88.0" layoutY="67.0" prefHeight="19.0" prefWidth="91.0" text="STAFF LIST" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="99.0" layoutY="21.0">
+                     <image>
+                        <Image url="@../../../../../AppData/Local/Temp/icons8_checklist_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="60.0" layoutY="24.0" text="Staff Management">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="373.0" text="Teacher Management Management ">
+         <font>
+            <Font name="Candara Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="403.0" text="S C H  O O L   M A N A G E M E N T" textFill="#8d8d8d">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <Pane layoutX="83.0" layoutY="325.0" prefHeight="200.0" prefWidth="788.0" styleClass="footer-1">
+         <children>
+            <Label layoutX="197.0" layoutY="66.0" text="Staff Management Management ">
+               <font>
+                  <Font name="Candara Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="96.0" text="S C H  O O L   M A N A G E M E N T" textFill="#8d8d8d">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="-4.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_name_tag_500px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../css/student.css" />
+            <URL value="@../css/teacher.css" />
+         </stylesheets>
+      </Pane>
+   </children>
+</AnchorPane>

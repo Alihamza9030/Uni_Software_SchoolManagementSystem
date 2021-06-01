@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="937.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TeacherController">
+    <stylesheets>
+        <URL value="@/css/teacher.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="78.0" layoutY="63.0" prefHeight="100.0" prefWidth="788.0" spacing="20.0" styleClass="HBox" stylesheets="@../css/student.css">
+         <children>
+            <Pane onMouseClicked="#show_AddTeacher" prefHeight="90.0" prefWidth="260.0" styleClass="Box-1" stylesheets="@../css/student.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Label layoutX="78.0" layoutY="67.0" text="ADD TEACHER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="99.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/icons8_man_teacher_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="236.0" styleClass="Box-2" stylesheets="@../css/student.css">
+               <children>
+                  <ImageView layoutX="98.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/icons8_search_client_40px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="63.0" layoutY="67.0" text="SEARCH TEACHER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="238.0" styleClass="Box-3" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="28.0" layoutY="67.0" prefHeight="19.0" prefWidth="190.0" text="TEACHER SUBJECT &amp; CLASS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="93.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../Images/icons8_teacher_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="67.0" layoutY="19.0" text="Teacher Management">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="76.0" layoutY="186.0" prefHeight="100.0" prefWidth="788.0" spacing="20.0" styleClass="HBox" stylesheets="@../css/student.css">
+         <children>
+            <Pane prefHeight="90.0" prefWidth="306.0" styleClass="Box-4" stylesheets="@../css/student.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Label layoutX="69.0" layoutY="67.0" text="TEACHER PAYMENT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="107.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/icons8_money_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="282.0" styleClass="Box-5" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="78.0" layoutY="67.0" text="Update Delete " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="95.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/icons8_update_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="285.0" styleClass="Box-6" stylesheets="@../css/student.css">
+               <children>
+                  <Label layoutX="76.0" layoutY="67.0" prefHeight="19.0" prefWidth="119.0" text="TEACHER LIST" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="98.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../Images/icons8_checklist_48px_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Pane layoutX="75.0" layoutY="316.0" prefHeight="200.0" prefWidth="788.0" styleClass="footer-1">
+         <children>
+            <Label layoutX="197.0" layoutY="66.0" text="Teacher Management Management ">
+               <font>
+                  <Font name="Candara Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="96.0" text="S C H  O O L   M A N A G E M E N T" textFill="#8d8d8d">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-1.0" layoutY="-5.0">
+               <image>
+                  <Image url="@../Images/icons8_classroom_500px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@../css/student.css" />
+            <URL value="@../css/teacher.css" />
+         </stylesheets>
+      </Pane>
+   </children>
+</AnchorPane>

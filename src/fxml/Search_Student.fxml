@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="937.0" styleClass="mainFxmlClass" stylesheets="@../css/search_student.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Search_StudentController">
+   <children>
+      <JFXComboBox layoutX="71.0" layoutY="162.0" prefHeight="25.0" prefWidth="149.0" promptText="Chose Class" />
+      <Pane layoutY="-2.0" prefHeight="58.0" prefWidth="937.0" style="-fx-background-color: #CB4335;">
+         <children>
+            <Label layoutX="54.0" layoutY="22.0" text="SEARCH STUDENT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField layoutX="71.0" layoutY="218.0" promptText="Enter Roll No" styleClass="Rollno" stylesheets="@../css/search_student.css" />
+      <Pane layoutX="295.0" layoutY="56.0" prefHeight="484.0" prefWidth="642.0" styleClass="right-pane" stylesheets="@../css/search_student.css">
+         <children>
+            <Label layoutX="258.0" layoutY="14.0" text="STUDENT DATA">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutY="112.0" prefHeight="42.0" prefWidth="642.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="6.0" layoutY="10.0" prefHeight="28.0" prefWidth="78.0" text="Name:" />
+                  <Label layoutX="240.0" layoutY="8.0" prefHeight="28.0" prefWidth="78.0" text="Father Name:" />
+               </children>
+            </Pane>
+            <Pane layoutY="154.0" prefHeight="42.0" prefWidth="642.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="6.0" layoutY="10.0" prefHeight="28.0" prefWidth="78.0" text="Cast:" />
+                  <Label layoutX="243.0" layoutY="10.0" prefHeight="28.0" prefWidth="78.0" text="Age:" />
+                  <Label layoutX="409.0" layoutY="10.0" prefHeight="28.0" prefWidth="42.0" text="DOB:" />
+               </children>
+            </Pane>
+            <Pane layoutY="196.0" prefHeight="42.0" prefWidth="642.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="8.0" layoutY="7.0" prefHeight="28.0" prefWidth="78.0" text="Address:" />
+               </children>
+            </Pane>
+            <Pane layoutY="238.0" prefHeight="42.0" prefWidth="642.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="6.0" layoutY="10.0" prefHeight="28.0" prefWidth="78.0" text="City:" />
+                  <Label layoutX="243.0" layoutY="10.0" prefHeight="28.0" prefWidth="78.0" text="Religion:" />
+                  <Label layoutX="409.0" layoutY="10.0" prefHeight="28.0" prefWidth="71.0" text="Nationality:" />
+               </children>
+            </Pane>
+            <Pane layoutY="280.0" prefHeight="42.0" prefWidth="642.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="6.0" layoutY="10.0" prefHeight="28.0" prefWidth="78.0" text="Roll No:" />
+                  <Label layoutX="243.0" layoutY="10.0" prefHeight="28.0" prefWidth="42.0" text="Class:" />
+                  <Label layoutX="409.0" layoutY="10.0" prefHeight="28.0" prefWidth="51.0" text="Contact:" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label layoutX="90.0" layoutY="89.0" text="ENTER DETAILS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="71.0" layoutY="270.0" prefHeight="25.0" prefWidth="149.0" styleClass="search-btn" stylesheets="@../css/search_student.css" text="Search" />
+   </children>
+</AnchorPane>

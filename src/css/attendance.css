@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.table-v{
+    -fx-background-color: transparent;
+    
+}
+.table-v .table-c{
+    -fx-background-color: tomato;
+    -fx-text-fill: #FFF;
+    
+}
+.rn-field{
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    
+}

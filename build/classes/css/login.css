@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+ -fx-background-color: #fff;
+ 
+}
+.login-btn{
+    -fx-background-color: tomato;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-border-radius: 5px;
+}
+.login-btn:hover{
+    -fx-opacity: 0.8;
+}
+.label1{
+    -fx-text-fill: tomato;
+    
+}
+.left-pane{
+   -fx-background-color:linear-gradient(to right, #f12711, #f5af19);
+}
+.signup-btn{
+    -fx-background-color: seagreen;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-border-radius: 5px;
+}
+.signup-btn:hover{
+    -fx-opacity: 0.8;
+}

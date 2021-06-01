@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border_Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="989.0" styleClass="root" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppController">
+    <stylesheets>
+        <URL value="@/css/app.css" />
+    </stylesheets>
+    <left>
+      <VBox prefHeight="540.0" prefWidth="29.0" styleClass="VBox" stylesheets="@../css/app.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@../Images/icons8_school_48px_1.png" />
+               </image>
+            </ImageView>
+            <JFXButton onMouseClicked="#show_dashboard" opacity="0.78" prefHeight="34.0" prefWidth="56.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" " textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="8.0" top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_dashboard_26px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onMouseClicked="#show_Student" opacity="0.78" prefHeight="40.0" prefWidth="38.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" " textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="3.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_student_male_32px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onMouseClicked="#show_Teacher" opacity="0.78" prefHeight="38.0" prefWidth="63.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" " textFill="#f8f6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_teacher_30px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></JFXButton>
+            <JFXButton onMouseClicked="#show_Staff" opacity="0.78" prefHeight="25.0" prefWidth="61.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" " VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="8.0" top="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_business_group_32px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onMouseClicked="#show_Attendance" opacity="0.78" prefHeight="25.0" prefWidth="58.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" ">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_attendance_32px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="2.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton opacity="0.78" prefHeight="25.0" prefWidth="58.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" ">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_money_pound_32px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton opacity="0.78" prefHeight="25.0" prefWidth="58.0" styleClass="side-btn" stylesheets="@../css/app.css" text=" ">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8_users_settings_32px_4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton opacity="0.78" styleClass="side-btn" stylesheets="@../css/app.css" text=" ">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true" translateX="5.0">
+                     <image>
+                        <Image url="@../Images/icons8_logout_rounded_up_30px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="99.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="dashboard" prefHeight="540.0" prefWidth="937.0" styleClass="dashboard" stylesheets="@../css/app.css" BorderPane.alignment="CENTER">
+          <children>
+            <Pane fx:id="topbar" layoutX="29.0" prefHeight="199.0" prefWidth="870.0" styleClass="back-pane" stylesheets="@../css/app.css">
+               <children>
+                  <HBox layoutX="20.0" layoutY="63.0" prefHeight="121.0" prefWidth="566.0" spacing="20.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="card-1" stylesheets="@../css/app.css">
+                           <children>
+                              <Label layoutX="45.0" layoutY="14.0" styleClass="text-1" stylesheets="@../css/app.css" text="STUDENTS" textAlignment="CENTER" />
+                              <Label fx:id="stu_count" layoutX="75.0" layoutY="53.0" prefHeight="26.0" prefWidth="23.0" styleClass="count" stylesheets="@../css/app.css" text="0" />
+                              <Pane layoutX="-23.0" layoutY="-86.0" prefHeight="282.0" prefWidth="797.0" visible="false" />
+                           </children>
+                           
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="card-2" stylesheets="@../css/app.css">
+                           <children>
+                              <Label layoutX="49.0" layoutY="14.0" styleClass="text-1" stylesheets="@../css/app.css" text="TEACHERS" textAlignment="CENTER" />
+                              <Label layoutX="77.0" layoutY="53.0" styleClass="count" stylesheets="@../css/app.css" text="0" />
+                           </children>
+                          
+                        </Pane>
+                        <Pane layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="card-3" stylesheets="@../css/app.css">
+                           <children>
+                              <Label layoutX="65.0" layoutY="14.0" styleClass="text-1" stylesheets="@../css/app.css" text="STAFF" textAlignment="CENTER" />
+                              <Label layoutX="74.0" layoutY="53.0" styleClass="count" stylesheets="@../css/app.css" text="0" />
+                           </children>
+                           
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Label layoutX="14.0" layoutY="14.0" style="-fx-font-family: &quot;Amenda&quot;; -fx-font-size: 15px;" text="DASHBOARD">
+                     <effect>
+                        <Glow level="0.08" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="604.0" layoutY="14.0" prefHeight="25.0" prefWidth="175.0" promptText="Search" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" />
+                  <ImageView layoutX="752.0" layoutY="18.0">
+                     <image>
+                        <Image url="@../Images/search.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="105.0" layoutY="13.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="0.0" />
+                  <Label layoutX="111.0" layoutY="19.0" text="School Management System">
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="562.0" layoutY="22.0">
+                     <image>
+                        <Image url="@../Images/icons8_notification_24px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="window" layoutX="688.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" visible="false" />
+                  <Pane layoutX="579.0" layoutY="17.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: red; -fx-background-radius: 100%;">
+                     <children>
+                        <Label layoutX="4.0" layoutY="-1.0" prefHeight="17.0" prefWidth="12.0" text="1" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <ImageView layoutX="818.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../../../../../AppData/Local/Temp/icons8_male_user_32px_2.png" />
+                     </image>
+                     
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="29.0" layoutY="205.0" prefHeight="317.0" prefWidth="394.0" styleClass="bottom-left-pane" stylesheets="@../css/app.css" />
+            <Pane layoutX="429.0" layoutY="205.0" prefHeight="316.0" prefWidth="470.0" styleClass="bottom-right-pane" stylesheets="@../css/app.css">
+               <children>
+                  <Pane layoutX="45.0" layoutY="74.0" prefHeight="205.0" prefWidth="179.0" styleClass="status-Box">
+                     <children>
+                        <Pane layoutX="43.0" layoutY="60.0" opacity="0.89" prefHeight="100.0" prefWidth="100.0" styleClass="round-box" stylesheets="@../css/app.css">
+                           <children>
+                              <Label layoutX="36.0" layoutY="35.0" text="0%">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="53.0" layoutY="14.0" prefHeight="28.0" prefWidth="106.0" style="-fx-font-weight: bold;" text="Total Boys " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView layoutX="2.0" layoutY="158.0">
+                           <image>
+                              <Image url="@../Images/icons8_about_me_male_50px_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="246.0" layoutY="74.0" prefHeight="205.0" prefWidth="179.0" styleClass="status-Box2">
+                     <children>
+                        <Pane layoutX="43.0" layoutY="60.0" opacity="0.89" prefHeight="100.0" prefWidth="100.0" styleClass="round-box" stylesheets="@../css/app.css">
+                           <children>
+                              <Label layoutX="36.0" layoutY="35.0" text="0%">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="50.0" layoutY="14.0" prefHeight="28.0" prefWidth="95.0" style="-fx-font-weight: bold;" text="Total Girls" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView layoutY="157.0">
+                           <image>
+                              <Image url="@../Images/icons8_system_administrator_female_50px_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="45.0" layoutY="14.0" text="Student Stats">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

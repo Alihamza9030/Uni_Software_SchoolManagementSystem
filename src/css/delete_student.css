@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+  -fx-background-color: #FFF;
+}
+.delete-btn{
+    -fx-background-color: red;
+    -fx-text-fill: #FFF;
+}
